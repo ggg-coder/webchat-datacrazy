@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demonstração do Webchat</title>
+    <style>
+      body {
+        font:
+          16px/1.5 system-ui,
+          sans-serif;
+        max-width: 720px;
+        margin: 40px auto;
+        padding: 0 16px;
+        color: #0f172a;
+      }
+      code {
+        background: #f1f5f9;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+      button {
+        margin: 4px 8px 4px 0;
+        padding: 8px 12px;
+        border-radius: 8px;
+        border: 1px solid #cbd5e1;
+        background: #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Site de exemplo</h1>
+    <p>Esta página simula o site de um cliente com o snippet do webchat:</p>
+    <p><code>&lt;script src="/widget.js" async&gt;&lt;/script&gt;</code></p>
+    <p>
+      <button onclick="DCWebchat.open()">DCWebchat.open()</button>
+      <button onclick="DCWebchat.close()">DCWebchat.close()</button>
+      <button onclick="DCWebchat.identify({ name: 'Cliente Identificado', email: 'cliente@exemplo.com', phone: '+55 11 91234-5678' })">
+        DCWebchat.identify(…)
+      </button>
+    </p>
+    <script src="/widget.js" async></script>
+  </body>
+</html>

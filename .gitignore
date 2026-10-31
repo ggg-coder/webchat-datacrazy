@@ -1,0 +1,22 @@
+# Dependências e build
+node_modules/
+.next/
+/out/
+/build
+*.tsbuildinfo
+next-env.d.ts
+
+# Variáveis de ambiente (nunca versionar)
+.env
+.env*.local
+!.env.example
+
+# Vercel e Supabase CLI
+.vercel
+supabase/.temp/
+
+# Sistema e logs
+.DS_Store
+*.pem
+npm-debug.log*
+.pnpm-debug.log*
